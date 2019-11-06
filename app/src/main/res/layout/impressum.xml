@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/impressum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_impressum"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_impressum"
+        android:layout_height="match_parent"
+        tools:showIn="@layout/impressum">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="AHOJ-Jugendgottesdienst"
+            android:id="@+id/impressum_name_string"
+            android:layout_marginTop="80sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Version 2.0"
+            android:id="@+id/impressum_version"
+            android:layout_marginTop="1sp"
+            android:layout_below="@id/impressum_name_string"
+            android:layout_centerHorizontal="true"
+            android:textColor="#dcdcdc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ahoj_logo"
+            android:id="@+id/impressum_icon"
+            android:layout_marginTop="14sp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:layout_below="@id/impressum_version"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="©2017 Evangelisches Jugendwerk Bezirk Esslingen"
+            android:id="@+id/trademark"
+            android:layout_marginTop="16sp"
+            android:layout_below="@id/impressum_icon"
+            android:layout_centerHorizontal="true"
+            android:textColor="#dcdcdc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Entwicklung: NachtaktiverHalbaffe"
+            android:id="@+id/impressum_entwickler"
+            android:layout_marginTop="8sp"
+            android:layout_below="@id/trademark"
+            android:layout_centerHorizontal="true"
+            android:textColor="#dcdcdc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Logo: Sarah Kiesel"
+            android:id="@+id/impressum_logo"
+            android:layout_below="@id/impressum_entwickler"
+            android:layout_centerHorizontal="true"
+            android:textColor="#dcdcdc" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lizenzen"
+            android:id="@+id/licence"
+            android:layout_alignTop="@+id/datenschutzbestimmung"
+            android:layout_toStartOf="@+id/datenschutzbestimmung" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kontakt"
+            android:id="@+id/kontakt"
+            android:layout_alignTop="@+id/datenschutzbestimmung"
+            android:layout_toEndOf="@+id/datenschutzbestimmung" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datenschutz\nBestimmung"
+            android:id="@+id/datenschutzbestimmung"
+            android:layout_marginTop="39sp"
+            android:layout_below="@+id/impressum_logo"
+            android:layout_alignStart="@+id/impressum_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_divider"
+            android:id="@+id/line_divider"
+            android:layout_marginTop="5sp"
+            android:scaleX="0.9"
+            android:layout_below="@id/datenschutzbestimmung"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Einstellungen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/einstellungen"
+            android:layout_below="@+id/line_divider"
+            android:layout_marginTop="4sp"
+            android:layout_centerHorizontal="true" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Errinnerung an nächsten AHOJ"
+            android:id="@+id/push_switch"
+            android:layout_below="@+id/einstellungen"
+            android:layout_alignStart="@+id/impressum_entwickler" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_impressum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="de.eje_esslingen.ahoj_jugendgottesdienst.Impressum"
+    tools:showIn="@layout/impressum">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="App"
+    android:id="@+id/app_string"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version: 1.0"
+        android:id="@+id/app_version"
+        android:textSize="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/app_string"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontakt: eje-esslingen.de"
+        android:id="@+id/app_kontakt"
+        android:textSize="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/app_version"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entwickler: Felix Brugger"
+        android:id="@+id/app_entwickler"
+        android:textSize="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/app_kontakt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logodesign von Sarah Kiesel und Nici Schmauder"
+        android:id="@+id/app_design"
+        android:textSize="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/app_entwickler"/>
+
+</RelativeLayout>

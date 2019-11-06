@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.eje_esslingen.ahoj_jugendgottesdienst">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Drawer"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true"
+            android:configChanges="orientation|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true"
+            android:name="fragments.Team_Details"/>
+
+        <activity
+            android:name="threads.play_video"
+            android:resizeableActivity="true"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <service android:name="threads.backgroundtask_push" />
+        <service android:name="threads.MediaPlayerService" />
+
+
+        <meta-data android:name="android.max_aspect"
+            android:value="ratio_float"/>
+
+        <receiver android:name="threads.BootCompleteReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

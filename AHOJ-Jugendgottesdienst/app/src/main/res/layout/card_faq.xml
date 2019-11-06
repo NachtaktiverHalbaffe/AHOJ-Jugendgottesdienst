@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/faq_card"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:orientation="horizontal">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Frage"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/faq_frage"
+            android:layout_alignEnd="@+id/faq_antwort"
+            android:layout_alignParentStart="true" />
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Antwort"
+            android:id="@+id/faq_antwort"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/faq_frage"/>
+
+</RelativeLayout>
+

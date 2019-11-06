@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001ec7</color>
+    <color name="colorPrimaryLight">#136bf9</color>
+    <color name="colorPrimaryMiddle">#1339f9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="card_pressed">#bababa</color>
+</resources>

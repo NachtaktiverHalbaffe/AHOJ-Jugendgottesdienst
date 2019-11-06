@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/neuigkeiten"
+            android:icon="@drawable/ic_subject_black_24dp"
+            android:title="Neuigkeiten" />
+        <item
+            android:id="@+id/instagram"
+            android:icon="@drawable/ic_instagram_white"
+            android:title="Instagram"/>
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/team"
+            android:icon="@drawable/ic_recent_actors_black_24dp"
+            android:title="Das Team"/>
+        <item
+            android:id="@+id/verantstaltungen"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Veranstaltungen" />
+        <item
+            android:id="@+id/fahrgemeinschaften"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Fahrgemeinschaften" />
+
+    </group>
+
+    <item android:title="App">
+        <menu>
+            <item
+                android:id="@+id/einstellungen"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Einstellungen" />
+            <item
+                android:id="@+id/impressum"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Über AHOJ-App" />
+        </menu>
+    </item>
+
+</menu>

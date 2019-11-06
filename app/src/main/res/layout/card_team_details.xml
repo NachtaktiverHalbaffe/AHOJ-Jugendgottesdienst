@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_team_detail"
+    android:background="@drawable/selector">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_detail"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/selector">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:padding="16dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/team_profilpic_detail"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="24dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:id="@+id/team_name_detail"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/team_profilpic_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Hauptfunktion"
+                android:id="@+id/team_hauptfunktion_detail"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/team_name_detail"
+                android:layout_toRightOf="@id/team_profilpic_detail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginTop="12dp"
+                android:text="Alter:"
+                android:textStyle="bold"
+                android:id="@+id/team_alter_string"
+                android:layout_below="@id/team_hauptfunktion_detail"
+                android:layout_toRightOf="@id/team_profilpic_detail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginLeft="4dp"
+                android:text="(xx Jahre)"
+                android:id="@+id/team_alter"
+                android:layout_above="@+id/team_wohnort"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/team_alter_string" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginTop="2dp"
+                android:text="Wohnort:"
+                android:textStyle="bold"
+                android:id="@+id/team_wohnort_string"
+                android:layout_below="@id/team_alter_string"
+                android:layout_toRightOf="@id/team_profilpic_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginLeft="4dp"
+                android:text="(Wohnort)"
+                android:id="@+id/team_wohnort"
+                android:layout_alignTop="@+id/team_wohnort_string"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/team_wohnort_string"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Mitarbeit seit:"
+                android:textStyle="bold"
+                android:id="@+id/team_mitarbeitszeit_string"
+                android:layout_below="@+id/team_wohnort"
+                android:layout_alignStart="@+id/team_wohnort_string"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="4dp"
+                android:text="(x Jahren)"
+                android:id="@+id/team_mitarbeitszeit"
+                android:layout_below="@id/team_wohnort"
+                android:layout_toRightOf="@id/team_mitarbeitszeit_string"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:text="Für mich ist der AHOJ:"
+                android:textStyle="bold"
+                android:id="@+id/team_ahojverständnis_string"
+                android:layout_below="@id/team_profilpic_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_gravity="fill"
+                android:text="(Kurzer Text, was der Ahoj für ihn ist                    )"
+                android:id="@+id/team_ahojverständnis"
+                android:layout_below="@+id/team_ahojverständnis_string"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/team_mitarbeitszeit"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"
+                android:text="Ich arbeite mit, weil:"
+                android:textStyle="bold"
+                android:id="@+id/team_motivation_string"
+                android:layout_below="@id/team_ahojverständnis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_gravity="fill"
+                android:layout_marginBottom="10dp"
+                android:text="(Kurzer Text, was die Motivation ist)"
+                android:id="@+id/team_motivation"
+                android:layout_below="@+id/team_motivation_string"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/team_mitarbeitszeit"
+                android:layout_alignParentEnd="true"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

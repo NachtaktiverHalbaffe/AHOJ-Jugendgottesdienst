@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_veranstaltungen"
+    android:background="@drawable/selector">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http;//schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/selector">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:padding="16dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="16dp"
+                android:id="@+id/plakat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Veranstaltung"
+                android:textStyle="bold"
+                android:id="@+id/veranstaltung_string"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/plakat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Motto"
+                android:id="@+id/veranstaltung_motto"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/plakat"
+                android:layout_below="@id/veranstaltung_string" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Datum:"
+                android:id="@+id/veranstaltung_datum_string"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/plakat"
+                android:layout_below="@id/veranstaltung_string" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

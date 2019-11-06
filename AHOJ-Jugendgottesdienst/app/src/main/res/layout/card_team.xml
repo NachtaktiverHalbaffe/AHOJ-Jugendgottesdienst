@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_team"
+    android:background="@drawable/selector">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http;//schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/selector">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="16dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="16dp"
+        android:id="@+id/team_profilpic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="30dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:id="@+id/team_name"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/team_profilpic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="3dp"
+        android:text="Hauptfunktion"
+        android:id="@+id/team_hauptfunktion"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/team_profilpic"
+        android:layout_below="@id/team_name" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

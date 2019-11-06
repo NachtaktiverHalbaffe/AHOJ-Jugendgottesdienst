@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:recyvler_view="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginBottom="30sp"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_alignBottom="@id/cover" />
+
+
+        <ImageView
+            android:id="@+id/ic_mediaplayercontrol"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/seekbar"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            app:srcCompat="@drawable/ic_play_circle_filled_white_48dp" />
+
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/ic_mediaplayercontrol"
+            android:layout_alignTop="@id/ic_mediaplayercontrol"
+            app:srcCompat="@drawable/ic_replay_5_white_48dp" />
+
+        <TextView
+            android:id="@+id/Titel"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ic_mediaplayercontrol"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14sp"
+            android:text="Kurzimpulse"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+        <ImageView
+            android:id="@+id/ic_forward"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="4dp"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_toRightOf="@id/ic_mediaplayercontrol"
+            android:layout_alignTop="@id/ic_mediaplayercontrol"
+            app:srcCompat="@drawable/ic_forward_5_white_48dp" />
+
+        <TextView
+            android:id="@+id/aktuelle_zeit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/ic_mediaplayercontrol"
+            android:text="00:00"
+            android:layout_marginLeft="12sp"
+            style="@style/AudioFileInfoOverlayText"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/laenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ic_mediaplayercontrol"
+            android:text="00:00"
+            android:layout_marginRight="12sp"
+            style="@style/AudioFileInfoOverlayText"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/impulse_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cover"
+        android:layout_marginTop="200sp"
+        recyvler_view:cardUseCompatPadding="false" />
+
+
+</FrameLayout>
